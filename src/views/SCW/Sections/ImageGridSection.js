@@ -21,7 +21,6 @@ import { S3_URL } from "../../../constants";
 const useStyles = makeStyles(styles);
 
 export default function ImageGridSection(props) {
-  const { quoteRef } = props;
   const classes = useStyles();
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down("sm"));
@@ -114,7 +113,7 @@ export default function ImageGridSection(props) {
   }
 
   return (
-    <div className={classes.section} ref={quoteRef}>
+    <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
           <h2 className={classes.title}>Portfolio</h2>

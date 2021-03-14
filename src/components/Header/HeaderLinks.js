@@ -15,7 +15,7 @@ import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js
 const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props) {
-  const { quoteRef } = props;
+  const { contactRef } = props;
   const classes = useStyles();
   return (
     <List className={classes.list}>
@@ -25,7 +25,7 @@ export default function HeaderLinks(props) {
           target="_blank"
           className={classes.navLink}
           onClick={() =>
-            quoteRef.current.scrollIntoView({
+              contactRef.current.scrollIntoView({
               behavior: "smooth",
             })
           }
