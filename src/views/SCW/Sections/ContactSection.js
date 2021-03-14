@@ -17,6 +17,7 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/contactStyle.js";
+import { Analytics } from 'aws-amplify';
 
 const useStyles = makeStyles(styles);
 
@@ -97,9 +98,11 @@ export default function ContactSection(props) {
         )
         .then(
           () => {
+            Analytics.record({ name: "contactRequest", attributes: { status: "successful" } });
             setState((prevState) => ({ ...prevState, sentMessage: true }));
           },
           (err) => {
+            Analytics.record({ name: "contactRequest", attributes: { status: "failed" } });
             console.log("FAILED...", err);
           }
         );

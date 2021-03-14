@@ -9,4 +9,11 @@ export default {
       region: "us-west-1", //OPTIONAL -  Amazon service region
     },
   },
+  Analytics: {
+    AWSPinpoint: {
+      appId: "66bd613d74bd4022b3923ccf45f870c0",
+      region: "us-west-2",
+      mandatorySignIn: false,
+    }
+  }
 };

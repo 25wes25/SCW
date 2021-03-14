@@ -11,6 +11,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
+import {Analytics} from "aws-amplify";
 
 const useStyles = makeStyles(styles);
 
@@ -45,6 +46,7 @@ export default function HeaderLinks(props) {
             target="_blank"
             color="transparent"
             className={classes.navLink}
+            onClick={() => Analytics.record({ name: "socialMedia", attributes: { status: "yelp" } })}
           >
             <i className={classes.socialIcons + " fab fa-yelp"} />
           </Button>
@@ -62,28 +64,29 @@ export default function HeaderLinks(props) {
             href="https://www.facebook.com/Swanson-Custom-Woodworks-29132461530"
             target="_blank"
             className={classes.navLink}
+            onClick={() => Analytics.record({ name: "socialMedia", attributes: { status: "facebook" } })}
           >
             <i className={classes.socialIcons + " fab fa-facebook"} />
           </Button>
         </Tooltip>
       </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-tooltip"
-          title="Follow us on instagram"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-instagram"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
+      {/*<ListItem className={classes.listItem}>*/}
+      {/*  <Tooltip*/}
+      {/*    id="instagram-tooltip"*/}
+      {/*    title="Follow us on instagram"*/}
+      {/*    placement={window.innerWidth > 959 ? "top" : "left"}*/}
+      {/*    classes={{ tooltip: classes.tooltip }}*/}
+      {/*  >*/}
+      {/*    <Button*/}
+      {/*      color="transparent"*/}
+      {/*      href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"*/}
+      {/*      target="_blank"*/}
+      {/*      className={classes.navLink}*/}
+      {/*    >*/}
+      {/*      <i className={classes.socialIcons + " fab fa-instagram"} />*/}
+      {/*    </Button>*/}
+      {/*  </Tooltip>*/}
+      {/*</ListItem>*/}
     </List>
   );
 }
