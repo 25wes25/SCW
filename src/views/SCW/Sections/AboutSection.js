@@ -23,7 +23,7 @@ export default function AboutSection() {
     classes.imgFluid
   );
   const dateStartedWoodworking = new Date(1983, 0, 1, 0, 0, 0, 0);
-  const dateStartedBusiness = new Date(1999, 0, 1, 0, 0, 0, 0);
+  const dateStartedBusiness = new Date(1996, 0, 1, 0, 0, 0, 0);
   const todaysDate = new Date();
   const yearsOfExperience =
     todaysDate.getFullYear() - dateStartedWoodworking.getFullYear();
@@ -31,7 +31,7 @@ export default function AboutSection() {
     todaysDate.getFullYear() - dateStartedBusiness.getFullYear();
   return (
     <div className={classes.section}>
-      <h2 className={classes.title}>Robert Swanson</h2>
+      <h2 className={classes.title}>Rob Swanson</h2>
       <h4
         className={classes.subTitle}
       >{`${yearsOfExperience} Years of Experience`}</h4>
