@@ -5,7 +5,7 @@ export default {
   },
   Storage: {
     AWSS3: {
-      bucket: "tellico-woodworks", //REQUIRED -  Amazon S3 bucket name
+      bucket: "swanson-custom-woodworks", //REQUIRED -  Amazon S3 bucket name
       region: "us-west-1", //OPTIONAL -  Amazon service region
     },
   },
