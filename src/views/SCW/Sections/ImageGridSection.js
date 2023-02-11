@@ -36,7 +36,7 @@ export default function ImageGridSection(props) {
   useEffect(() => {
     Storage.list("images/") // for listing ALL files without prefix, pass '' instead
       .then((result) => {
-        results = result.results
+        let results = result.results
         const residentialRE = RegExp("images/residential/(.+)");
         const commercialRE = RegExp("images/commercial/(.+)");
         let newResidentialImages = [];
