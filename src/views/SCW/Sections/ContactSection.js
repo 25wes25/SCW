@@ -211,7 +211,7 @@ export default function ContactSection(props) {
                 <Phone className={classes.contactIcon} />
                 <div className={classes.contactTitle}>CALL</div>
               </div>
-              <div className={classes.contactText}>(714) 505-8861</div>
+              <div className={classes.contactText}>(949) 680-6223</div>
               <div className={classes.contactItem}>
                 <EmailIcon className={classes.contactIcon} />
                 <div className={classes.contactTitle}>EMAIL</div>
