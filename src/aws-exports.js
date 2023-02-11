@@ -6,7 +6,7 @@ export default {
   Storage: {
     AWSS3: {
       bucket: "tellico-woodworks", //REQUIRED -  Amazon S3 bucket name
-      region: "us-east-1", //OPTIONAL -  Amazon service region
+      region: "us-west-1", //OPTIONAL -  Amazon service region
     },
   },
   Analytics: {
