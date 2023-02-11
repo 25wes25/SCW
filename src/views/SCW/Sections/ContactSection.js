@@ -218,17 +218,10 @@ export default function ContactSection(props) {
               </div>
               <a
                 className={classes.contactLink}
-                href={"mailto:rob@swansonwoodworks.com"}
+                href={"mailto:rob@tellicowoodworks.com"}
               >
-                rob@swansonwoodworks.com
+                rob@tellicowoodworks.com
               </a>
-              <div className={classes.contactItem}>
-                <LocationOn className={classes.contactIcon} />
-                <div className={classes.contactTitle}>VISIT</div>
-              </div>
-              <div className={classes.contactText}>
-                2500 S Fairview St Ste J Santa Ana, CA 92704
-              </div>
             </GridItem>
           </GridContainer>
         </GridItem>

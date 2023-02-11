@@ -34,42 +34,42 @@ export default function HeaderLinks(props) {
           CONTACT
         </Button>
       </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="yelp-tooltip"
-          title="See our reviews on yelp"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            href="https://www.yelp.com/biz/swanson-custom-woodworks-santa-ana"
-            target="_blank"
-            color="transparent"
-            className={classes.navLink}
-            onClick={() => Analytics.record({ name: "socialMedia", attributes: { status: "yelp" } })}
-          >
-            <i className={classes.socialIcons + " fab fa-yelp"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="facebook-tooltip"
-          title="Follow us on facebook"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://www.facebook.com/Swanson-Custom-Woodworks-29132461530"
-            target="_blank"
-            className={classes.navLink}
-            onClick={() => Analytics.record({ name: "socialMedia", attributes: { status: "facebook" } })}
-          >
-            <i className={classes.socialIcons + " fab fa-facebook"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
+      {/*<ListItem className={classes.listItem}>*/}
+      {/*  <Tooltip*/}
+      {/*    id="yelp-tooltip"*/}
+      {/*    title="See our reviews on yelp"*/}
+      {/*    placement={window.innerWidth > 959 ? "top" : "left"}*/}
+      {/*    classes={{ tooltip: classes.tooltip }}*/}
+      {/*  >*/}
+      {/*    <Button*/}
+      {/*      href="https://www.yelp.com/biz/swanson-custom-woodworks-santa-ana"*/}
+      {/*      target="_blank"*/}
+      {/*      color="transparent"*/}
+      {/*      className={classes.navLink}*/}
+      {/*      onClick={() => Analytics.record({ name: "socialMedia", attributes: { status: "yelp" } })}*/}
+      {/*    >*/}
+      {/*      <i className={classes.socialIcons + " fab fa-yelp"} />*/}
+      {/*    </Button>*/}
+      {/*  </Tooltip>*/}
+      {/*</ListItem>*/}
+      {/*<ListItem className={classes.listItem}>*/}
+      {/*  <Tooltip*/}
+      {/*    id="facebook-tooltip"*/}
+      {/*    title="Follow us on facebook"*/}
+      {/*    placement={window.innerWidth > 959 ? "top" : "left"}*/}
+      {/*    classes={{ tooltip: classes.tooltip }}*/}
+      {/*  >*/}
+      {/*    <Button*/}
+      {/*      color="transparent"*/}
+      {/*      href="https://www.facebook.com/Swanson-Custom-Woodworks-29132461530"*/}
+      {/*      target="_blank"*/}
+      {/*      className={classes.navLink}*/}
+      {/*      onClick={() => Analytics.record({ name: "socialMedia", attributes: { status: "facebook" } })}*/}
+      {/*    >*/}
+      {/*      <i className={classes.socialIcons + " fab fa-facebook"} />*/}
+      {/*    </Button>*/}
+      {/*  </Tooltip>*/}
+      {/*</ListItem>*/}
       {/*<ListItem className={classes.listItem}>*/}
       {/*  <Tooltip*/}
       {/*    id="instagram-tooltip"*/}

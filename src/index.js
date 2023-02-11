@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch } from "react-router-dom";
-import Amplify from "aws-amplify";
+import { Amplify } from "aws-amplify";
 import aws_exports from "./aws-exports";
 
 import "assets/scss/material-kit-react.scss?v=1.9.0";

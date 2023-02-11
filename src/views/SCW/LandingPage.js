@@ -25,7 +25,7 @@ export default function LandingPage(props) {
   return (
     <div>
       <Header
-        brand="Swanson Custom Woodworks"
+        brand="Tellico Woodworks"
         rightLinks={<HeaderLinks contactRef={contactRef} />}
         fixed
         color="transparent"
