@@ -40,6 +40,7 @@ export default function ImageGridSection(props) {
         const commercialRE = RegExp("images/commercial/(.+)");
         let newResidentialImages = [];
         let newCommercialImages = [];
+        console.log(result)
         result.forEach((image) => {
           if (residentialRE.test(image.key)) {
             newResidentialImages.push({
