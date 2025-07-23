@@ -51,8 +51,9 @@ export default function AboutSection() {
                 laminate & metal! After learning my trade in the commercial & residential sides of the industry I 
                 pursued independent contracting and obtained a contracting license in 1996. By 1999, just 3 years later, 
                 I had opened my wood shop to service the many new customers brought to me by word of mouth. I've been 
-                designing and building custom cabinetry throughout California ever since, accumulating a total of 
-                ${yearsOfExperience} years working with wood and ${yearsOfBusinessExperience} years running my business.`}
+                designing and building custom cabinetry throughout California, Arizona, and Nevada ever since, accumulating 
+                a total of ${yearsOfExperience} years working with wood and ${yearsOfBusinessExperience} years running my business.
+                In November 2022 I moved my business to Tennessee!`}
             </Card>
           </GridItem>
         </GridContainer>
